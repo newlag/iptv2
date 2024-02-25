@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/logotype"
+        android:layout_width="64dp"
+        android:layout_height="64dp"/>
+
+    <TextView
+        android:id="@+id/channel_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/logotype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/logotype"
+        app:layout_constraintBottom_toBottomOf="@id/logotype"
+        android:layout_marginStart="16dp"
+        android:text="Название канала"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
